@@ -1,0 +1,43 @@
+/* dois elementos distintos que tem a cor azul */
+p, span {
+    color: blue;
+}
+
+/* elemento p que possui classe gartic ao mesmo tempo */
+p.garlic { /* 0,0,1,1 */
+    color: cornflowerblue;
+}
+
+/* Por que a prioridade é maior que p.garlic ? 
+  Porque a classe é mais específica que o elemento html  
+  elementos "p" são descendentes da div
+*/
+div p { /* 0,0,0,2 */
+    color: black;
+}
+
+/* filhos da div
+   possui a mesma prioridade do "div p" 
+   Qual é a diferença de descendentes e filhos ? 
+*/
+div > p { /* 0,0,0,2 */
+    color: green;
+}
+
+/*  Próximo irmão "p" de h2*/
+h2 + p {
+    color: brown;
+}
+
+/* Próximos irmãos "h3" de "p" */
+p ~ h3 {
+    color: darkorange;
+}
+
+[lang] {
+    font-size: large;
+}
+
+
+
+
