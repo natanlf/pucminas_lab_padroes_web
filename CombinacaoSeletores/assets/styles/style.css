@@ -19,9 +19,24 @@ div p { /* 0,0,0,2 */
 /* filhos da div
    possui a mesma prioridade do "div p" 
    Qual é a diferença de descendentes e filhos ? 
+   filho é imediatamento o "p" dentro da div
+   Se tiver mais divs dentro das divs e dentro tiver um p, não é filho, é descendente
+   p filhos da div
 */
 div > p { /* 0,0,0,2 */
     color: green;
+}
+
+/* div avô -> pai -> filho, filho "p" laranja
+    com especifidade o suficiente para sobreescrever a regra abaixo do descendente
+*/
+div div > p { /* 0,0,0,3 */
+    color: orange;
+}
+
+/* todo "p" descendentes da div, inclusive netos*/
+div p { /* 0,0,0,2 */
+    color: black;
 }
 
 /*  Próximo irmão "p" de h2*/

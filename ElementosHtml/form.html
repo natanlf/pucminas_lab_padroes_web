@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <form action="" method="post">
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="name">Nome: </label>
+                <input type="text" name="name" id="name" required placeholder="Ex.: Michael"><br>
+                <label for="email">Email: </label>
+                <input type="text" name="email" id="email"><br>
+                <label for="dtNascimento">Data de nascimento: </label>
+                <input type="date" name="dtNascimento" id="dtNascimento"><br>
+                <label for="sexo">Sexo: </label><br>
+                <input type="radio" name="sexo" value="male" id="sexo">Masculino <br>
+                <input type="radio" name="sexo" value="female" id="sexo">Feminino <br>
+                <label for="tel">Telefone: </label>
+                <input type="tel" name="tel" id="tel"><br>
+                <label for="Senha">Senha: </label>
+                <input type="password" name="senha" id="Senha">
+            </fieldset>
+            <fieldset>
+                <legend>Quero</legend>
+                <label for="fruta">Frutas: </label>
+                <select name="fruta" id="fruta">
+                    <option value="">Selecione uma Fruta</option>
+                    <option value="abacaxi">Abacaxi</option>
+                    <option value="ameixa">Ameixa</option>
+                    <option value="banana">Banana</option>
+                    <option value="morango">Morango</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Sugestões</legend>
+                <label for="sugestoes">Sugestões: </label>
+                <textarea name="sugestoes" id="sugestoes" cols="60" rows="16"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Consentimento</legend>
+                <label for="consent">Termos</label> <br>
+                <input type="checkbox" name="cartao" id="cartao">Cartão <br>
+                <input type="checkbox" name="conta" id="conta">Conta <br>
+                <input type="checkbox" name="financiamento" id="financiamento">Financiamento
+            </fieldset>
+            <fieldset>
+                <legend>Meios de transporte</legend>
+                <input type="options" list="transportes" name="transportes">
+                <datalist id="transportes">
+                    <option value="Carro">
+                    <option value="Barco">
+                    <option value="Avião">    
+                </datalist>
+            </fieldset>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </form>
+        <br><br>
+        <hr>
+        <div class="mapouter">
+            <div class="gmap_canvas">
+                <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=-23.141728059791667, -44.16802755912357&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+                <a href="https://embedmapgenerator.com/">embed google maps in website</a>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
