@@ -1,0 +1,29 @@
+#container {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    background-color: antiquewhite;
+    padding: 10px 20px 10px;
+}
+
+#header {
+    position: absolute;
+    right: 50%;
+}
+
+#menu {
+    position: absolute;
+    left: 20px;
+}
+
+#section {
+    position: relative;
+    top: 70px;
+    margin-bottom: 100px;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+}

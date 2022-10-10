@@ -1,0 +1,37 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 20px;
+}
+
+.container div {
+    width: 30%;
+    border-color: blue;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 20px;
+    align-items: center;
+}
+
+.coluna div {
+    width: 30%;
+    border-color: red;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 20px;
+    justify-content: center;
+}
+
+.linha div {
+    width: 30%;
+    border-color: green;
+}

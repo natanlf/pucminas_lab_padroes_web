@@ -1,0 +1,11 @@
+[id="myId"] {
+    color: blue;
+}
+
+[class~="myClass"] {
+    color: green;
+}
+
+[lang] {
+    color: brown;
+}

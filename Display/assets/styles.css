@@ -1,0 +1,40 @@
+#container {
+    width: 100%;
+    height: auto;
+}
+
+.inline {
+    width: 100%;
+    height: 200px;
+    display: inline;
+}
+
+.none {
+    display: none;
+}
+
+.inline > div { /*filhos div de inline, disse filhos, não netos */
+    display: inline;
+}
+
+.block > div {
+    display: block;
+}
+
+.inline-block > div {
+    display: inline-block;
+}
+
+.red-square {
+    width: 100px;
+    height: 100px;
+    background: red;
+    color: white;
+}
+
+.blue-square {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    color: white;
+}
