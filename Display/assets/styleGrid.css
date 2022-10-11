@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+}
+
+.wrapper {
+    background-color: beige;
+    height: 100vh;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: 100px 1fr auto;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas: 
+        "topo topo"
+        "main direita"
+        "rodape direita";
+}
+
+.blue {
+    background-color: blue;
+    grid-area: topo;
+}
+
+.green {
+    background-color: aquamarine;
+    grid-area: direita;
+}
+
+.orange {
+    background-color: orange;
+    grid-area: rodape;
+}
